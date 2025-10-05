@@ -1,9 +1,8 @@
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-// Temporarily disabled due to Turbopack error
-// import { Analytics } from '@vercel/analytics/react';
-// import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: "AudibleSmiles - Building Community Through Hearing",
