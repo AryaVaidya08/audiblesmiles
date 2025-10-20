@@ -23,7 +23,7 @@ export default function Team() {
             </div>
             <h3 className={styles.memberName}>Amay Naik</h3>
             <p className={styles.memberRole}>Executive Director</p>
-            <p className={styles.memberBio}>Amay is a senior at Bridgewater Raritan High School who founded this organization to help hearing impaired people like himself, that don't have access to financial support. In his free time, he likes to write fantasy, run, and do wildlife photography!</p>
+            <p className={styles.memberBio}>Amay is a senior at Bridgewater Raritan High School who founded this organization to help hearing impaired people like himself, that don&apos;t have access to financial support. In his free time, he likes to write fantasy, run, and do wildlife photography!</p>
           </div>
           
           <div className={styles.teamMember}>
@@ -53,7 +53,7 @@ export default function Team() {
             </div>
             <h3 className={styles.memberName}>Ohmal Suresh</h3>
             <p className={styles.memberRole}>Fundraising Director</p>
-            <p className={styles.memberBio}>Ohmal is a senior at Bridgewater-Raritan High School who's been a consistent member of Audible Smiles since his junior year. He is passionate about public speaking, reading, and playing volleyball.</p>
+            <p className={styles.memberBio}>Ohmal is a senior at Bridgewater-Raritan High School who&apos;s been a consistent member of Audible Smiles since his junior year. He is passionate about public speaking, reading, and playing volleyball.</p>
           </div>
           
           <div className={styles.teamMember}>
@@ -83,7 +83,7 @@ export default function Team() {
             </div>
             <h3 className={styles.memberName}>Anik Shah</h3>
             <p className={styles.memberRole}>Outreach Director</p>
-            <p className={styles.memberBio}>Anik joined Audible Smiles because he wants to make an impact on people's lives by raising money for hearing aids. In his spare time, he enjoys biking, reading, and traveling.</p>
+            <p className={styles.memberBio}>Anik joined Audible Smiles because he wants to make an impact on people&apos;s lives by raising money for hearing aids. In his spare time, he enjoys biking, reading, and traveling.</p>
           </div>
           
           <div className={styles.teamMember}>
