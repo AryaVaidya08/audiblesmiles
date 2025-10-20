@@ -5,7 +5,6 @@ export default function OurImpact() {
     <div className={styles.container}>
       <div className={styles.header}>
         <h1 className={styles.title}>How We Help</h1>
-        <p className={styles.subtitle}>Discover the various ways Audible Smiles makes a difference in the hearing-impaired community through fundraising, partnerships, and direct support initiatives.</p>
       </div>
       
       <div className={styles.content}>

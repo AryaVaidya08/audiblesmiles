@@ -1,7 +1,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0rem;
+  padding: 2rem;
   background-color: #f8f9fa;
   min-height: calc(100vh - 200px);
   margin-top: -80px;
@@ -48,6 +48,7 @@
 
 .mission {
   margin-bottom: 3rem;
+  padding: 0 1rem;
 }
 
 .sectionTitle {
@@ -83,7 +84,6 @@
 }
 
 .activityCard:hover {
-  transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 

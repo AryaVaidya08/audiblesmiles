@@ -6,7 +6,6 @@ export default function Team() {
     <div className={styles.container}>
       <div className={styles.header}>
         <h1 className={styles.title}>Meet the Team Behind Audible Smiles</h1>
-        <p className={styles.subtitle}>Get to know the dedicated individuals who make Audible Smiles possible through their passion for helping the hearing-impaired community.</p>
       </div>
       
       <div className={styles.content}>

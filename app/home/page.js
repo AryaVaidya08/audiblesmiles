@@ -5,7 +5,6 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.hero}>
         <h1 className={styles.title}>Building Community Through Hearing</h1>
-        <p className={styles.subtitle}>Audible Smiles is a nonprofit organization dedicated to providing aid for needy, hearing-impaired individuals. We raise awareness and funds to provide hearing aids, ensuring everyone has the chance to hear, learn, and thrive.</p>
       </div>
       
       <div className={styles.mission}>

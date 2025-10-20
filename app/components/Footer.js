@@ -51,7 +51,7 @@ export default function Footer() {
         
         <div className={styles.bottom}>
           <p className={styles.copyright}>
-            © 2024 Audible Smiles. All rights reserved.
+            © 2025 Audible Smiles. All rights reserved.
           </p>
         </div>
       </div>

@@ -39,7 +39,7 @@
 }
 
 .content {
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .faqContainer {
@@ -127,21 +127,6 @@
     padding: 1rem;
   }
   
-  .header {
-    padding: 8rem 1rem 2rem 1rem;
-    margin-left: -1rem;
-    margin-right: -1rem;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-  }
-  
-  .subtitle {
-    font-size: 1.2rem;
-    max-width: 95%;
-  }
-  
   .questionButton {
     padding: 1.2rem 1.5rem;
     font-size: 1rem;
@@ -158,14 +143,6 @@
 }
 
 @media (max-width: 480px) {
-  .title {
-    font-size: 2rem;
-  }
-  
-  .subtitle {
-    font-size: 1rem;
-  }
-  
   .questionButton {
     padding: 1rem 1.2rem;
     font-size: 0.95rem;

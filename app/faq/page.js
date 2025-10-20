@@ -64,8 +64,7 @@ export default function FAQ() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h1 className={`${styles.title} ${funnelSansClassName}`}>Common questions about Audible Smiles</h1>
-        <p className={`${styles.subtitle} ${funnelSansClassName}`}>Find answers to frequently asked questions about our mission, activities, and how you can get involved in supporting the hearing-impaired community.</p>
+        <h1 className={`${styles.title} ${funnelSansClassName}`}>Common Questions About Audible Smiles</h1>
       </div>
       
       <div className={styles.content}>

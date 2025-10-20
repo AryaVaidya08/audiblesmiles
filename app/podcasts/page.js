@@ -5,7 +5,6 @@ export default function Podcasts() {
     <div className={styles.container}>
       <div className={styles.header}>
         <h1 className={styles.title}>Stories from the Hearing Loss Community</h1>
-        <p className={styles.subtitle}>Listen to inspiring stories and educational content from individuals who have experienced hearing loss, and learn about our mission through engaging podcast episodes.</p>
       </div>
       
       <div className={styles.content}>
