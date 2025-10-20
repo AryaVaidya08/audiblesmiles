@@ -69,6 +69,9 @@ export const metadata = {
   },
   verification: {
     google: 'google53ea055d3c01e4ca',
+    other: {
+      'google-site-verification': 'google53ea055d3c01e4ca',
+    },
   },
 };
 
