@@ -1,18 +1,26 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0rem;
   background-color: #f8f9fa;
   min-height: calc(100vh - 200px);
+  margin-top: -80px;
 }
 
 .hero {
   text-align: center;
-  padding: 4rem 0;
-  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-  border-radius: 20px;
-  margin-bottom: 3rem;
+  padding: 10rem 0 2rem 0;
+  background: linear-gradient(135deg, #3b82f6 0%, #1e3a8a 100%);
+  border-radius: 0;
+  margin: -2rem -2rem 3rem -2rem;
   color: white;
+  width: 100vw;
+  max-width: none;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .title {
@@ -26,22 +34,20 @@
   font-size: 1.5rem;
   margin-bottom: 2rem;
   opacity: 0.9;
+  justify-self: center;
+  max-width: 85%;
 }
 
 .description {
   font-size: 1.1rem;
   line-height: 1.6;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   opacity: 0.95;
 }
 
 .mission {
-  background-color: white;
-  padding: 3rem;
-  border-radius: 15px;
   margin-bottom: 3rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .sectionTitle {
@@ -58,10 +64,6 @@
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
-}
-
-.activities {
-  margin-bottom: 3rem;
 }
 
 .activityGrid {
@@ -96,35 +98,3 @@
   line-height: 1.6;
 }
 
-.cta {
-  background: linear-gradient(135deg, #F4CA3E 0%, #f59e0b 100%);
-  padding: 3rem;
-  border-radius: 15px;
-  text-align: center;
-  color: white;
-}
-
-.ctaText {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 2rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.ctaButton {
-  background-color: #1e3a8a;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 10px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.ctaButton:hover {
-  background-color: #1e40af;
-}

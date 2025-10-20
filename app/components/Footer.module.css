@@ -1,19 +1,23 @@
 .footer {
-  background-color: #1e3a8a;
+  background: rgba(59, 130, 246, 1);
+  backdrop-filter: blur(10px);
   color: white;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .container {
-  max-width: 1200px;
+  width: 80%;
+  justify-self: center;
   margin: 0 auto;
-  padding: 3rem 2rem 1rem;
+  padding: 2rem 2rem 1rem;
 }
 
 .content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 5rem;
   margin-bottom: 2rem;
 }
 
@@ -26,7 +30,8 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #F4CA3E;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .sectionTitle {
@@ -34,33 +39,41 @@
   font-weight: bold;
   margin-bottom: 1rem;
   color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .description {
-  line-height: 1.6;
+  line-height: 1.5;
   opacity: 0.9;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .links {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25rem 0.5rem;
 }
 
 .links li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 .links a {
   color: white;
   text-decoration: none;
   opacity: 0.9;
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 0.3rem 0;
+  display: block;
 }
 
 .links a:hover {
   opacity: 1;
-  color: #F4CA3E;
+  color: #f0f9ff;
+  transform: translateX(5px);
 }
 
 .contactInfo {
@@ -68,10 +81,60 @@
   opacity: 0.9;
 }
 
+.contactInfo p {
+  margin-bottom: 0.5rem;
+}
+
+.contactInfo strong {
+  font-weight: bold;
+  color: #f0f9ff;
+}
+
+.contactButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.contactButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.contactButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.contactButton span {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
 .bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 1rem;
   text-align: center;
+  backdrop-filter: blur(5px);
 }
 
 .copyright {
@@ -88,5 +151,18 @@
   .content {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  
+  .contactButtons {
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  
+  .contactButton {
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .contactButton span {
+    font-size: 0.9rem;
   }
 }
