@@ -1,5 +1,36 @@
 import styles from './page.module.css';
 
+export const metadata = {
+  title: "Home",
+  description: "Building Community Through Hearing - AudibleSmiles raises awareness and funds to support individuals with hearing loss through community partnerships, fundraising events, and educational programs.",
+  keywords: [
+    "hearing loss support",
+    "community building",
+    "fundraising events",
+    "hearing aid assistance",
+    "deaf community",
+    "hard of hearing support",
+    "nonprofit organization",
+    "bridgewater nj"
+  ],
+  openGraph: {
+    title: "Building Community Through Hearing | AudibleSmiles",
+    description: "AudibleSmiles raises awareness and funds to support individuals with hearing loss through community partnerships, fundraising events, and educational programs.",
+    images: [
+      {
+        url: '/Transparent_Logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'AudibleSmiles - Building Community Through Hearing',
+      },
+    ],
+  },
+  twitter: {
+    title: "Building Community Through Hearing | AudibleSmiles",
+    description: "AudibleSmiles raises awareness and funds to support individuals with hearing loss through community partnerships, fundraising events, and educational programs.",
+  },
+};
+
 export default function Home() {
   return (
     <div className={styles.container}>

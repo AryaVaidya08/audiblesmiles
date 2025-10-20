@@ -1,5 +1,36 @@
 import styles from './page.module.css';
 
+export const metadata = {
+  title: "Our Impact",
+  description: "Discover how AudibleSmiles makes a difference through fundraising activities, community engagement, partnerships with national organizations, and direct support for hearing aid accessibility.",
+  keywords: [
+    "audible smiles impact",
+    "hearing aid fundraising",
+    "community engagement",
+    "hearing loss support",
+    "nonprofit partnerships",
+    "hearing charities",
+    "fundraising events",
+    "hearing health awareness"
+  ],
+  openGraph: {
+    title: "Our Impact | AudibleSmiles",
+    description: "Discover how AudibleSmiles makes a difference through fundraising activities, community engagement, partnerships with national organizations, and direct support for hearing aid accessibility.",
+    images: [
+      {
+        url: '/Transparent_Logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'AudibleSmiles Impact',
+      },
+    ],
+  },
+  twitter: {
+    title: "Our Impact | AudibleSmiles",
+    description: "Discover how AudibleSmiles makes a difference through fundraising activities, community engagement, partnerships with national organizations, and direct support for hearing aid accessibility.",
+  },
+};
+
 export default function OurImpact() {
   return (
     <div className={styles.container}>

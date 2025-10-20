@@ -1,39 +1,13 @@
+'use client';
+
+import { useState } from 'react';
+import { IoChevronDown } from 'react-icons/io5';
 import { funnelSansClassName } from '../fontStyles/funnelSans';
 import styles from './page.module.css';
-import FAQClient from './FAQClient';
 
-export const metadata = {
-  title: "FAQ",
-  description: "Frequently Asked Questions about AudibleSmiles - Learn about our nonprofit organization, how to get involved, volunteer opportunities, donations, and support for the hearing-impaired community.",
-  keywords: [
-    "audible smiles faq",
-    "hearing loss nonprofit",
-    "volunteer opportunities",
-    "hearing aid donations",
-    "deaf community support",
-    "nonprofit questions",
-    "hearing assistance programs",
-    "community support groups"
-  ],
-  openGraph: {
-    title: "FAQ | AudibleSmiles",
-    description: "Frequently Asked Questions about AudibleSmiles - Learn about our nonprofit organization, how to get involved, volunteer opportunities, and support for the hearing-impaired community.",
-    images: [
-      {
-        url: '/Transparent_Logo.png',
-        width: 1200,
-        height: 630,
-        alt: 'AudibleSmiles FAQ',
-      },
-    ],
-  },
-  twitter: {
-    title: "FAQ | AudibleSmiles",
-    description: "Frequently Asked Questions about AudibleSmiles - Learn about our nonprofit organization, how to get involved, volunteer opportunities, and support for the hearing-impaired community.",
-  },
-};
+export default function FAQClient() {
+  const [openItems, setOpenItems] = useState(new Set());
 
-export default function FAQ() {
   const faqData = [
     {
       id: 1,
@@ -77,30 +51,37 @@ export default function FAQ() {
     }
   ];
 
-  const faqStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqData.map(item => ({
-      "@type": "Question",
-      "name": item.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.answer
-      }
-    }))
+  const toggleItem = (id) => {
+    const newOpenItems = new Set(openItems);
+    if (newOpenItems.has(id)) {
+      newOpenItems.delete(id);
+    } else {
+      newOpenItems.add(id);
+    }
+    setOpenItems(newOpenItems);
   };
 
   return (
-    <div className={styles.container}>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
-      />
-      <div className={styles.header}>
-        <h1 className={`${styles.title} ${funnelSansClassName}`}>Common Questions About Audible Smiles</h1>
+    <div className={styles.content}>
+      <div className={styles.faqContainer}>
+        {faqData.map((item) => (
+          <div key={item.id} className={styles.faqItem}>
+            <button 
+              className={styles.questionButton}
+              onClick={() => toggleItem(item.id)}
+              aria-expanded={openItems.has(item.id)}
+            >
+              <span className={`${styles.questionText} ${funnelSansClassName}`}>{item.question}</span>
+              <IoChevronDown className={`${styles.arrow} ${openItems.has(item.id) ? styles.arrowOpen : ''}`} />
+            </button>
+            <div className={`${styles.answerContainer} ${openItems.has(item.id) ? styles.answerOpen : ''}`}>
+              <div className={styles.answer}>
+                {item.answer}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-      
-      <FAQClient />
     </div>
   );
 }

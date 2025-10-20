@@ -1,9 +1,102 @@
 import styles from './page.module.css';
 import Image from 'next/image';
 
+export const metadata = {
+  title: "Our Team",
+  description: "Meet the dedicated team behind AudibleSmiles - passionate students and supervisors working together to support the hearing-impaired community through fundraising, outreach, and community engagement.",
+  keywords: [
+    "audible smiles team",
+    "nonprofit leadership",
+    "hearing loss advocates",
+    "bridgewater raritan high school",
+    "student volunteers",
+    "hearing aid fundraising",
+    "community organizers",
+    "nonprofit directors"
+  ],
+  openGraph: {
+    title: "Our Team | AudibleSmiles",
+    description: "Meet the dedicated team behind AudibleSmiles - passionate students and supervisors working together to support the hearing-impaired community through fundraising, outreach, and community engagement.",
+    images: [
+      {
+        url: '/Transparent_Logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'AudibleSmiles Team',
+      },
+    ],
+  },
+  twitter: {
+    title: "Our Team | AudibleSmiles",
+    description: "Meet the dedicated team behind AudibleSmiles - passionate students and supervisors working together to support the hearing-impaired community through fundraising, outreach, and community engagement.",
+  },
+};
+
 export default function Team() {
+  const teamStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AudibleSmiles",
+    "description": "Meet the dedicated team behind AudibleSmiles - passionate students and supervisors working together to support the hearing-impaired community.",
+    "member": [
+      {
+        "@type": "Person",
+        "name": "Amay Naik",
+        "jobTitle": "Executive Director",
+        "description": "Amay is a senior at Bridgewater Raritan High School who founded this organization to help hearing impaired people like himself, that don't have access to financial support.",
+        "image": "https://audiblesmiles.org/Headshots/Amay_Headshot.png"
+      },
+      {
+        "@type": "Person",
+        "name": "Agastya Shahane",
+        "jobTitle": "Assistant Director",
+        "description": "Agastya is a senior at Bridgewater-Raritan High School who assisted in founding this organization to help bring awareness to those deaf and hard of hearing.",
+        "image": "https://audiblesmiles.org/Headshots/Agastya_Headshot.png"
+      },
+      {
+        "@type": "Person",
+        "name": "Ohmal Suresh",
+        "jobTitle": "Fundraising Director",
+        "description": "Ohmal is a senior at Bridgewater-Raritan High School who's been a consistent member of Audible Smiles since his junior year.",
+        "image": "https://audiblesmiles.org/Headshots/Ohmal_Headshot.png"
+      },
+      {
+        "@type": "Person",
+        "name": "Arya Vaidya",
+        "jobTitle": "Web Development Director",
+        "description": "Arya is a senior who joined Audible Smiles to support the journey and individuals to help people with hearing loss, a challenge he has personally experienced.",
+        "image": "https://audiblesmiles.org/Headshots/Arya_Headshot.png"
+      },
+      {
+        "@type": "Person",
+        "name": "Anik Shah",
+        "jobTitle": "Outreach Director",
+        "description": "Anik joined Audible Smiles because he wants to make an impact on people's lives by raising money for hearing aids.",
+        "image": "https://audiblesmiles.org/Headshots/Anik_Headshot.png"
+      },
+      {
+        "@type": "Person",
+        "name": "Kavin Kartigayan",
+        "jobTitle": "Treasury Director",
+        "description": "Kavin joined Audible Smiles because he wants to make a meaningful impact by helping others and contributing to a positive cause.",
+        "image": "https://audiblesmiles.org/Headshots/Kavin_Headshot.png"
+      },
+      {
+        "@type": "Person",
+        "name": "Sharvan Urs",
+        "jobTitle": "Secretary",
+        "description": "Sharvan has been apart of Audible Smiles for a year and a half and is looking forward to opening new chapters and raising as much money for hearing aids as possible.",
+        "image": "https://audiblesmiles.org/Headshots/Sharvan_Headshot.png"
+      }
+    ]
+  };
+
   return (
     <div className={styles.container}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(teamStructuredData) }}
+      />
       <div className={styles.header}>
         <h1 className={styles.title}>Meet the Team Behind Audible Smiles</h1>
       </div>
