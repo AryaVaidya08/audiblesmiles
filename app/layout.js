@@ -68,7 +68,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code', // Replace with actual verification code
+    google: 'google53ea055d3c01e4ca',
   },
 };
 
