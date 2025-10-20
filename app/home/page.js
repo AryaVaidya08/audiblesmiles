@@ -14,19 +14,19 @@ export const metadata = {
     "bridgewater nj"
   ],
   openGraph: {
-    title: "Building Community Through Hearing | AudibleSmiles",
+    title: "AudibleSmiles | Building Community Through Hearing",
     description: "AudibleSmiles raises awareness and funds to support individuals with hearing loss through community partnerships, fundraising events, and educational programs.",
     images: [
       {
         url: '/Transparent_Logo.png',
         width: 1200,
         height: 630,
-        alt: 'AudibleSmiles - Building Community Through Hearing',
+        alt: 'AudibleSmiles | Building Community Through Hearing',
       },
     ],
   },
   twitter: {
-    title: "Building Community Through Hearing | AudibleSmiles",
+    title: "AudibleSmiles | Building Community Through Hearing",
     description: "AudibleSmiles raises awareness and funds to support individuals with hearing loss through community partnerships, fundraising events, and educational programs.",
   },
 };
